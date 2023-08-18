@@ -1,0 +1,21 @@
+#game {
+    --mark-x-0: MAX(var(--mark-x-0-0, 0), var(--mark-x-0-1, 0), var(--mark-x-0-2, 0), var(--mark-x-0-3, 0), var(--mark-x-0-4, 0));
+    --mark-x-1: MAX(var(--mark-x-1-0, 0), var(--mark-x-1-1, 0), var(--mark-x-1-2, 0), var(--mark-x-1-3, 0), var(--mark-x-1-4, 0));
+    --mark-x-2: MAX(var(--mark-x-2-0, 0), var(--mark-x-2-1, 0), var(--mark-x-2-2, 0), var(--mark-x-2-3, 0), var(--mark-x-2-4, 0));
+    --mark-x-3: MAX(var(--mark-x-3-0, 0), var(--mark-x-3-1, 0), var(--mark-x-3-2, 0), var(--mark-x-3-3, 0), var(--mark-x-3-4, 0));
+    --mark-x-4: MAX(var(--mark-x-4-0, 0), var(--mark-x-4-1, 0), var(--mark-x-4-2, 0), var(--mark-x-4-3, 0), var(--mark-x-4-4, 0));
+    --mark-x-5: MAX(var(--mark-x-5-0, 0), var(--mark-x-5-1, 0), var(--mark-x-5-2, 0), var(--mark-x-5-3, 0), var(--mark-x-5-4, 0));
+    --mark-x-6: MAX(var(--mark-x-6-0, 0), var(--mark-x-6-1, 0), var(--mark-x-6-2, 0), var(--mark-x-6-3, 0), var(--mark-x-6-4, 0));
+    --mark-x-7: MAX(var(--mark-x-7-0, 0), var(--mark-x-7-1, 0), var(--mark-x-7-2, 0), var(--mark-x-7-3, 0), var(--mark-x-7-4, 0));
+    --mark-x-8: MAX(var(--mark-x-8-0, 0), var(--mark-x-8-1, 0), var(--mark-x-8-2, 0), var(--mark-x-8-3, 0), var(--mark-x-8-4, 0));
+
+    --mark-0: MAX(var(--mark-x-0), var(--mark-o-0), 0);
+    --mark-1: MAX(var(--mark-x-1), var(--mark-o-1), 0);
+    --mark-2: MAX(var(--mark-x-2), var(--mark-o-2), 0);
+    --mark-3: MAX(var(--mark-x-3), var(--mark-o-3), 0);
+    --mark-4: MAX(var(--mark-x-4), var(--mark-o-4), 0);
+    --mark-5: MAX(var(--mark-x-5), var(--mark-o-5), 0);
+    --mark-6: MAX(var(--mark-x-6), var(--mark-o-6), 0);
+    --mark-7: MAX(var(--mark-x-7), var(--mark-o-7), 0);
+    --mark-8: MAX(var(--mark-x-8), var(--mark-o-8), 0);
+}

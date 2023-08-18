@@ -1,0 +1,44 @@
+.p-0-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.p-1-0 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.p-2-0 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.p-0-1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.p-1-1 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.p-2-1 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.p-0-2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.p-1-2 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.p-2-2 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}

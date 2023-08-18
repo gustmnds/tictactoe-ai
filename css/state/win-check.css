@@ -1,0 +1,19 @@
+#game {
+    --o-wins: MAX(
+        MIN(var(--mark-o-0), var(--mark-o-1), var(--mark-o-2)),
+        MIN(var(--mark-o-3), var(--mark-o-4), var(--mark-o-5)),
+        MIN(var(--mark-o-6), var(--mark-o-7), var(--mark-o-8)),
+        MIN(var(--mark-o-0), var(--mark-o-3), var(--mark-o-6)),
+        MIN(var(--mark-o-1), var(--mark-o-4), var(--mark-o-7)),
+        MIN(var(--mark-o-2), var(--mark-o-5), var(--mark-o-8)),
+        MIN(var(--mark-o-0), var(--mark-o-4), var(--mark-o-8)),
+        MIN(var(--mark-o-2), var(--mark-o-4), var(--mark-o-6))
+    );
+
+
+    --all-marks: MIN(var(--mark-0), var(--mark-1), var(--mark-2), var(--mark-3), var(--mark-4), var(--mark-5), var(--mark-6), var(--mark-7), var(--mark-8));
+
+    --tie: calc(MIN(var(--all-marks), 1 - var(--o-wins)));
+
+    --disable-marks: calc(1 - max(var(--o-wins), var(--all-marks)));
+}

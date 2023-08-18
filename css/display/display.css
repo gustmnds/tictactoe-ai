@@ -1,0 +1,45 @@
+.board-displays .display {
+    width: 128px;
+    height: 128px;
+    display: block;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--mark-icon, var(--mark-o));
+}
+
+.board-displays .display.p-0-0 {
+    background-size: calc(128px * var(--mark-0));
+}
+
+.board-displays .display.p-1-0 {
+    background-size: calc(128px * var(--mark-1));
+}
+
+.board-displays .display.p-2-0 {
+    background-size: calc(128px * var(--mark-2));
+}
+
+.board-displays .display.p-0-1 {
+    background-size: calc(128px * var(--mark-3));
+}
+
+.board-displays .display.p-1-1 {
+    background-size: calc(128px * var(--mark-4));
+}
+
+.board-displays .display.p-2-1 {
+    background-size: calc(128px * var(--mark-5));
+}
+
+.board-displays .display.p-0-2 {
+    background-size: calc(128px * var(--mark-6));
+}
+
+.board-displays .display.p-1-2 {
+    background-size: calc(128px * var(--mark-7));
+}
+
+.board-displays .display.p-2-2 {
+    background-size: calc(128px * var(--mark-8));
+}

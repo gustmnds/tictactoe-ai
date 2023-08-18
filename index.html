@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TicTacToe AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/marks/positions.css">
+    <link rel="stylesheet" href="css/game/setup.css">
+    <link rel="stylesheet" href="css/board/board.css">
+    <link rel="stylesheet" href="css/marks/marks.css">
+    <link rel="stylesheet" href="css/display/display.css">
+    <link rel="stylesheet" href="css/state/win-check.css">
+    <link rel="stylesheet" href="css/game/core.css">
+</head>
+<body>
+    <div id="game">
+        <h1 id="game-title">TicTacToe AI<span>.css</span></h1>
+        <div class="boards">
+            <div class="board-marks">
+                <div class="board board-1">
+                    <input type="checkbox" class="mark p-0-0">
+                    <input type="checkbox" class="mark p-1-0">
+                    <input type="checkbox" class="mark p-2-0">
+                    <input type="checkbox" class="mark p-0-1">
+                    <input type="checkbox" class="mark p-1-1">
+                    <input type="checkbox" class="mark p-2-1">
+                    <input type="checkbox" class="mark p-0-2">
+                    <input type="checkbox" class="mark p-1-2">
+                    <input type="checkbox" class="mark p-2-2">
+                </div>
+                <div class="board board-2">
+                    <input type="checkbox" class="mark p-0-0">
+                    <input type="checkbox" class="mark p-1-0">
+                    <input type="checkbox" class="mark p-2-0">
+                    <input type="checkbox" class="mark p-0-1">
+                    <input type="checkbox" class="mark p-1-1">
+                    <input type="checkbox" class="mark p-2-1">
+                    <input type="checkbox" class="mark p-0-2">
+                    <input type="checkbox" class="mark p-1-2">
+                    <input type="checkbox" class="mark p-2-2">
+                </div>
+                <div class="board board-3">
+                    <input type="checkbox" class="mark p-0-0">
+                    <input type="checkbox" class="mark p-1-0">
+                    <input type="checkbox" class="mark p-2-0">
+                    <input type="checkbox" class="mark p-0-1">
+                    <input type="checkbox" class="mark p-1-1">
+                    <input type="checkbox" class="mark p-2-1">
+                    <input type="checkbox" class="mark p-0-2">
+                    <input type="checkbox" class="mark p-1-2">
+                    <input type="checkbox" class="mark p-2-2">
+                </div>
+                <div class="board board-4">
+                    <input type="checkbox" class="mark p-0-0">
+                    <input type="checkbox" class="mark p-1-0">
+                    <input type="checkbox" class="mark p-2-0">
+                    <input type="checkbox" class="mark p-0-1">
+                    <input type="checkbox" class="mark p-1-1">
+                    <input type="checkbox" class="mark p-2-1">
+                    <input type="checkbox" class="mark p-0-2">
+                    <input type="checkbox" class="mark p-1-2">
+                    <input type="checkbox" class="mark p-2-2">
+                </div>
+                <div class="board board-5">
+                    <input type="checkbox" class="mark p-0-0">
+                    <input type="checkbox" class="mark p-1-0">
+                    <input type="checkbox" class="mark p-2-0">
+                    <input type="checkbox" class="mark p-0-1">
+                    <input type="checkbox" class="mark p-1-1">
+                    <input type="checkbox" class="mark p-2-1">
+                    <input type="checkbox" class="mark p-0-2">
+                    <input type="checkbox" class="mark p-1-2">
+                    <input type="checkbox" class="mark p-2-2">
+                </div>
+            </div>
+            <div class="board board-displays">
+                <div class="display p-0-0"></div>
+                <div class="display p-1-0"></div>
+                <div class="display p-2-0"></div>
+                <div class="display p-0-1"></div>
+                <div class="display p-1-1"></div>
+                <div class="display p-2-1"></div>
+                <div class="display p-0-2"></div>
+                <div class="display p-1-2"></div>
+                <div class="display p-2-2"></div>
+            </div>
+        </div>
+        <div id="status-container">
+            <span id="tie-status" class="status">tie</span>
+            <span id="win-status" class="status">win</span>
+        </div>
+    </div>
+</body>
+</html>

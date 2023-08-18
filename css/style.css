@@ -1,0 +1,145 @@
+:root {
+    --mark-o: url(../../assets/svg/o.svg);
+    --mark-x: url(../../assets/svg/x.svg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #121212;
+    color: #fafafa
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#status-container {
+    display: flex;
+    justify-content: center;
+}
+
+#tie-status {
+    filter: opacity(var(--tie));
+}
+
+#win-status {
+    display: flex;
+    filter: opacity(var(--o-wins));
+}
+
+#win-status::before {
+    content: "";
+    display: block;
+    filter: opacity(var(--o-wins));
+    width: 64px;
+    height: 64px;
+    background-image: url(../assets/svg/o.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    background-position: center;
+}
+
+#game-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#game-title span {
+    color: #2095f2;
+}
+
+.boards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    height: 416px;
+}
+
+.board-marks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    position: absolute;
+
+    gap: 1rem;
+    grid-template-rows: repeat(3, 128px);
+    grid-template-columns: repeat(3, 128px);
+}
+
+.board-displays {
+    z-index: -1;
+}
+
+.mark {
+    appearance: none;
+    cursor: pointer;
+    width: calc(128px * min(var(--disable-marks), var(--size)));
+    height: calc(128px * min(var(--disable-marks), var(--size)));
+}
+
+#game .board-marks .board:has(.mark:checked) {
+    display: none;
+}
+
+.board-displays .display {
+    background-color: #2095f2;
+    border-radius: 12px;
+}
+
+.board-1 {
+    z-index: 5;
+}
+
+.board-2 {
+    z-index: 4;
+}
+
+.board-3 {
+    z-index: 3;
+}
+
+.board-4 {
+    z-index: 2;
+}
+
+.board-5 {
+    z-index: 1;
+}
+
+.status {
+    font-size: 48px;
+    position: absolute;
+}
+
+#game:has(.board-marks .p-0-0:checked) .board-displays .p-0-0,
+#game:has(.board-marks .p-0-1:checked) .board-displays .p-0-1,
+#game:has(.board-marks .p-0-2:checked) .board-displays .p-0-2,
+#game:has(.board-marks .p-1-0:checked) .board-displays .p-1-0,
+#game:has(.board-marks .p-1-1:checked) .board-displays .p-1-1,
+#game:has(.board-marks .p-1-2:checked) .board-displays .p-1-2,
+#game:has(.board-marks .p-2-0:checked) .board-displays .p-2-0,
+#game:has(.board-marks .p-2-1:checked) .board-displays .p-2-1,
+#game:has(.board-marks .p-2-2:checked) .board-displays .p-2-2 {
+    --mark-icon: var(--mark-x);
+}
